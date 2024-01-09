@@ -1,0 +1,103 @@
+ion-content{
+    --background: #fff;
+  --background: url("../../assets/bg.jpg");
+  background-repeat: repeat;
+  position: fixed;
+  background-size: cover;
+}
+
+ion-content {
+  font-family: "Poppins", sans-serif;
+  // --background: url("/assets/img/bg-5.jpg") center center/cover;
+  
+
+  .login-section {
+    height: 74vh;
+    width: 100%;
+    max-width: 500px;
+    background: #f8f8f8;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    margin: auto;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 48px;
+    overflow: auto;
+  }
+  .nav {
+    padding: 0 10px;
+    display: flex; /* Menjadikan elemen anak sejajar */
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 6%;
+    .profile {
+      color: #415a44;
+      font-size: 18px;
+      text-align: center;
+      font-family: "Poppins", sans-serif;
+    }
+    ion-icon {
+      color: #415a44;
+      font-size: 18px;
+      margin-left: 2%;
+      cursor: pointer;
+    }
+  }
+  .title {
+    margin-top: 8%;
+    color: #415a44;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: start;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 2%;
+  }
+
+  h3 {
+    text-align: start;
+    margin-left: 5%;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    margin-bottom: 1%;
+    text-decoration: underline;
+  }
+  .label_tahun {
+    color: #415a44;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+  }
+  .tahun {
+    border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    background-color: #f8f8f8;
+    margin-top: 3%;
+    width: 95%;
+    max-width: 100%;
+    margin-left: 3%;
+    margin-right: 4%;
+    margin-bottom: 8%;
+    border: 1px solid white;
+  }
+
+  ion-select,
+  ion-select-option {
+    background: none;
+    border: none;
+  }
+  ion-card {
+    background: RGBA(235, 243, 232, 0.57);
+  }
+  .btn {
+    background: #415a44;
+    color: #f8f8f8;
+  }
+  ion-button {
+    --background: none;
+    border: none;
+  }
+}

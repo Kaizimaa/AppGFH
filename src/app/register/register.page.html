@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+  <ion-buttons slot="start">
+  <ion-back-button></ion-back-button>
+</ion-buttons> 
+</ion-toolbar>
+</ion-header>
+
+ <ion-content [fullscreen]="true" style="height: 100%">
+  <div class="silau">
+    <div style="font-weight: 600; letter-spacing: 1px">
+      <div class="d-block justify-content-center py-3 h-100">
+        <ion-item>
+          <ion-label position="stacked" class="size-stacked">NIK</ion-label>
+          <ion-input
+            [(ngModel)]="nik"
+            placeholder="Masukan NIK"
+          ></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="stacked" class="size-stacked">Email</ion-label>
+          <ion-input
+            type="email"
+            [(ngModel)]="email"
+            placeholder="Masukan Email"
+          ></ion-input>
+        </ion-item>
+        <div class="form-group mt-3 mx-2">
+          <button class="form-control btn text-white btn-success" (click)="Insert()">
+            Mendaftar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

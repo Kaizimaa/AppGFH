@@ -1,0 +1,59 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tab2"></ion-back-button>
+    </ion-buttons>
+    <ion-label slot="start">
+       Warga Greendland Forest Hill</ion-label>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="nav">
+   <ion-icon
+     name="arrow-back-outline"
+     [routerLink]="['/tabs/tab1']"
+   ></ion-icon>
+   <ion-title class="profile">History Kas</ion-title>
+ </div>
+ <ion-title class="label_tahun">Tahun Pembayaran:</ion-title>
+ <ion-item class="tahun">
+   <ion-select [(ngModel)]="searchYear" placeholder=" tahun pembayaran...">
+     <ion-select-option *ngFor="let tahun of tahunList" value="{{tahun.tahun}}"
+       >{{tahun.tahun}}</ion-select-option
+     >
+   </ion-select>
+   <ion-icon
+     name="search-sharp"
+     class="mx-1"
+     style="font-size: 20px"
+     (click)="getPayment()"
+   ></ion-icon>
+ </ion-item>
+
+ <div class="login-section" ion-padding>
+   <ion-title class="title">History Kas </ion-title>
+   <ion-card
+     class="my-2"
+     style="border-radius: 15px"
+     *ngFor="let data of Data"
+   >
+     <ion-card-header>
+       <div class="d-flex justify-content-between w-100">
+         <ion-card-title>{{data.bulan}}</ion-card-title>
+         <button class="btn btn-success p-1 px-2 m-0">{{data.status}}</button>
+       </div>
+       <div class="block">
+         <span>{{data.jenis}}</span>
+         <div>
+           <span class="mt-2">Tahun : {{data.tahun}}</span>
+         </div>
+       </div>
+       <ion-card-subtitle>Keterangan : {{data.ket}}</ion-card-subtitle>
+       <div class="w-100 d-flex justify-content-end mt-1 text-end">
+         <ion-card-subtitle>{{data.tgl}}</ion-card-subtitle>
+       </div>
+     </ion-card-header>
+   </ion-card>
+ </div>
+</ion-content>

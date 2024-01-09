@@ -1,0 +1,126 @@
+
+
+.foto img{
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+
+}
+   .custom-font{
+   font-family: 'Consolas', sans-serif;
+}
+.title {
+   color: #012f18;
+       text-align: center;
+       margin-bottom: 10px;
+   h3 {
+   font-family: "Segoe UI";
+   font-size: 20pt;
+   margin-bottom: 25px;
+   }
+   h5 {
+   font-family: "Segoe UI";
+    }
+   }
+.reg {   
+   text-align: center;
+   h3 {
+   font-family: "Segoe UI";
+   font-size: 5pt;
+   }
+   h5 {
+   font-family: "Segoe UI";
+   }
+   }
+ion-content{
+  --background:#c9c9c9;
+   img{
+      height: 130px;
+      margin-top: 35%;
+      }
+   .warp-input{
+      background-color: rgba(255,255,255, .8);
+      border-radius: 20px;
+      margin-bottom: 26px;
+      margin-left: 20px;
+      margin-right: 20px;
+      box-shadow: 0 10px 30px 0px rgba(0, 145, 255, 0.12 );
+   }
+    input {
+      color: black;
+      display: block;
+      width: 100%;
+      background-color: #ffffff ;
+      margin-top: 50px;
+      border-radius: 25px;
+      font-family: consolas;
+      font-size: 18px;
+      line-height: 1,5;
+      border: none;
+      outline: none;
+      height: 46px;
+      padding: 0 20px 0 23px;
+   }
+   .container-form-btn {
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+   }
+   .form-btn{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 20px;
+      min-width: 160px;
+      height: 40px;
+      background-color: #ffff;
+      border-radius: 20px;
+      font-size: 18px;
+      color: #ffff;
+      text-transform: uppercase;
+      padding-top: 5px;
+      transition: all 0.45;
+      box-shadow: #ffff;
+
+   }
+   .form-btn:hover{
+      background-color:#127305;
+      box-shadow: #127305;
+   }
+   .btn {
+      font-size: 10px;
+      color: #0b50ff;
+      text-transform: uppercase;
+   }
+   b {
+      color: black;
+   }
+   .see{
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 16px;
+    }
+    .footer {
+      position:fixed;
+      color: #127305;
+      bottom:0;
+      left:0;
+      width:100%;
+      height: 25px;
+      background-color: #fff;
+      text-align: center;
+    }
+}
+
+.login-txt{
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 40px;
+   font-weight: bold;
+   letter-spacing: 1px;
+   color: #F6FFFD;
+ }
+ 
+ .login-text {
+   font-family: "Courier New", Courier, monospace;
+   font-weight: bolder;
+   font-size: 50px;
+ }

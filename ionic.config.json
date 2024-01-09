@@ -1,0 +1,7 @@
+{
+  "name": "appgfh",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

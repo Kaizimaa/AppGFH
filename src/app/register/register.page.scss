@@ -1,0 +1,38 @@
+ion-content {
+    --ion-background-color: #c9c9c9;
+  }
+  .bg-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+  }
+  
+  .size-stacked {
+    font-size: 14px;
+  }
+  
+  ion-input {
+    background-color: #fff;
+    border-radius: 5px;
+    margin-top: 5px;
+  }
+  
+  ion-input {
+    border: none;
+    border-radius: 6px;
+  }
+  .btn-success {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .btn-success:hover {
+    background-color: #218838;
+  }
+  

@@ -1,0 +1,42 @@
+<!--  
+<ion-header>
+  <ion-toolbar>
+    <ion-label slot="start">
+       Warga Greendland Forest Hill</ion-label>
+    <ion-buttons slot="end">
+      <ion-button (click)="confirmLogout()"><ion-icon name="log-out"></ion-icon></ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content [fullscreen]="true" class="bg">
+  <ion-refresher slot="fixed" (ionRefresh)="handleRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+  <div class="mx-1 mt-2 mb-5">
+    <div *ngFor="let data of Data">
+      <ion-card class="my-2" style="border-radius: 15px; --background: #f5f7f8">
+        <ion-card-header>
+          <div class="d-block">
+            <div>
+              <span style="color: #043724; font-size: 20px"
+                >{{data.judul_info}}</span
+              >
+            </div>
+            <div>
+              <span class="mt-2" style="color: #043724; font-size: 15px"
+                >{{data.informasi}}</span
+              >
+            </div>
+          </div>
+          <div class="w-100 d-flex justify-content-end mt-1 text-end">
+            <ion-card-subtitle style="font-size: 12px"
+              >{{data.tgl_info}}</ion-card-subtitle
+            >
+          </div>
+        </ion-card-header>
+      </ion-card>
+    </div>
+  </div>
+</ion-content>
+

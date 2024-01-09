@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs"></ion-back-button>
+    </ion-buttons>
+    <ion-label slot="start">
+       Warga Greendland Forest Hill</ion-label>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label position="floating">Email</ion-label>
+      <ion-input [(ngModel)]="email" type="text" name="email"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Username</ion-label>
+      <ion-input [(ngModel)]="username" type="text" name="username"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Password</ion-label>
+      <ion-input [(ngModel)]="password" type="password" name="password"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <ion-row class="ion-padding-top">
+    <ion-col>
+      <ion-button expand="full" (click)="updateUser()">Update Akun</ion-button>
+    </ion-col>
+  </ion-row>
+</ion-content>

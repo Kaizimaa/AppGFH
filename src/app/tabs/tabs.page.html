@@ -1,0 +1,96 @@
+<!-- <ion-content>
+  <ion-fab slot="fixed" vertical="bottom" horizontal="end">
+    <ion-fab-button>
+      <ion-icon name="chevron-up-circle"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button (click)="showkas()" class="shadow">
+        <ion-icon name="document-text-outline"></ion-icon>
+        <ion-label>Pembayaran</ion-label>
+      </ion-fab-button>
+      <ion-fab-button (click)="showlainnya()" class="shadow">
+        <ion-icon name="calendar-outline"></ion-icon>
+        <ion-label>Histori Kas</ion-label>
+      </ion-fab-button>
+      <ion-fab-button (click)="showhiskas()" class="shadow">
+        <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+        <ion-label>Histori lainnya</ion-label>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+</ion-content> -->
+<ion-tabs>
+<ion-tab-bar class="tab" slot="bottom">
+<ion-tab-button tab="tab1">
+<ion-icon name="person"> </ion-icon>
+  <ion-label>Profil </ion-label>
+</ion-tab-button>
+
+<ion-tab-button tab="tab2">
+  <ion-icon name="people"></ion-icon>
+  <ion-label>Anggota</ion-label>
+</ion-tab-button>
+
+<ion-tab-button class="middle">
+  <img
+    src="../assets/daun.png" width="50px"/>
+  <ion-button size="large" fill="clear" id="popover-button"></ion-button>
+  <ion-popover class="mypopover" trigger="popover-button" alignment="center" [dismissOnSelect]="true" show-backdrop="true" >
+    <ng-template>
+      <ion-content>
+        <div class="cluster">
+          <div class="clustering"> 
+            <div class="satuan">
+              <button (click)="showkas()" style="background-color: #c9c9c9;">
+                <ion-icon name="document-text"></ion-icon></button>
+              <ion-label>Pembayaran</ion-label>
+              
+            </div>
+            <div class="satuan">
+              <button (click)="showlainnya()" style="background-color: #c9c9c9;">
+                <ion-icon name="calendar"></ion-icon></button>
+                <ion-label>Histori Kas</ion-label>
+            </div>
+            <div class="satuan">
+              <button  (click)="showhiskas()" style="background-color: #c9c9c9;">
+                <ion-icon name="ellipsis-horizontal-outline"></ion-icon></button>
+                <ion-label>Histori lainnya</ion-label>
+            </div>
+        </div>
+        <div class="zona"></div>
+          <div class="clustering">
+            <div class="satuan">
+              <button  (click)="showeditakun()" style="background-color: #c9c9c9; margin-top: 3px;">
+                <ion-icon name="create"></ion-icon></button>
+                <ion-label>Ubah User/Sandi</ion-label>
+            </div>
+            <div class="satuan">
+              <button  (click)="confirmLogout()" style="background-color: #c9c9c9; margin-top: 3px;">
+                <ion-icon name="log-out"></ion-icon></button>
+                <ion-label>Log Out</ion-label>
+            </div>
+          </div>
+        </div>
+      </ion-content>
+    </ng-template>
+  </ion-popover>
+</ion-tab-button>
+
+
+<ion-tab-button tab="tab3">
+  <ion-icon name="information-circle"></ion-icon>
+ <ion-label>Informasi</ion-label>
+</ion-tab-button> 
+
+<ion-tab-button tab="tab4">
+  <ion-icon name="chatbox-ellipses"></ion-icon>
+   <ion-label>Pesan</ion-label>
+  </ion-tab-button>
+</ion-tab-bar>
+</ion-tabs>
+<!-- <ion-fab class="border" horizontal="center" vertical="bottom" >
+  <ion-fab-button color="dark" (click)="showeditakun()">
+    <img
+    src="../assets/daun.png" width="50px"/>
+  </ion-fab-button>
+</ion-fab> -->
